@@ -38,7 +38,11 @@ defmodule FlamegraphsWeb.Router do
     scope "/" do
       pipe_through :browser
 
-      live_dashboard "/dashboard", metrics: FlamegraphsWeb.Telemetry
+      live_dashboard "/dashboard",
+        metrics: FlamegraphsWeb.Telemetry,
+        additional_pages: [
+          flame_on: FlameOn.DashboardPage
+        ]
     end
   end
 
