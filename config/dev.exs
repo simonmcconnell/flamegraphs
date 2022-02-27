@@ -45,11 +45,12 @@ config :flamegraphs, FlamegraphsWeb.Endpoint,
 
 # Watch static and templates for browser reloading.
 config :flamegraphs, FlamegraphsWeb.Endpoint,
+  reloadable_compilers: [:gettext, :elixir, :surface],
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/flamegraphs_web/(live|views)/.*(ex)$",
+      ~r"lib/flamegraphs_web/(live|views|components)/.*(ex|sface|js)$",
       ~r"lib/flamegraphs_web/templates/.*(eex)$"
     ]
   ]

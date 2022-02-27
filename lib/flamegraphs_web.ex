@@ -39,6 +39,7 @@ defmodule FlamegraphsWeb do
 
       # Include shared imports and aliases for views
       unquote(view_helpers())
+      import Surface
     end
   end
 
