@@ -1,4 +1,8 @@
-# Flamegraphs
+`flame_on` liveview [issue](https://github.com/DockYard/flame_on/issues/2).  
+
+See `no-surface` branch, where the error is the same on a plain old liveview.
+
+## set up
 
 ```shell
 mix archive.install hex phx_new
