@@ -18,6 +18,7 @@ defmodule FlamegraphsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/lively", Lively
   end
 
   # Other scopes may use custom stacks.
